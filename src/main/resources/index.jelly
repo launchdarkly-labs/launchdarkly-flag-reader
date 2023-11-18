@@ -1,0 +1,5 @@
+<?jelly escape-by-default='true'?>
+<div>
+    This plugin loads a feature flag value from <a href="https://launchdarkly.com">LaunchDarkly</a> into an environment
+    variable.
+</div>

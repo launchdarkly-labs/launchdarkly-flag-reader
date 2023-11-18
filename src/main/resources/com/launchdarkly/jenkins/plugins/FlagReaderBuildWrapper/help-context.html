@@ -1,0 +1,25 @@
+<div>
+    The LaunchDarkly Context (JSON) you want to use. More info here: <a
+        href="https://docs.launchdarkly.com/home/contexts/">https://docs.launchdarkly.com/home/contexts/</a>
+    <p>Examples:</p>
+    <p>Bare minimum: <code>{ kind: "user", key: "user-key-123" }</code></p>
+    <p>Target on build flavor: <code>{ kind: "build", key: "jenkins-build", flavor: "debug" }</code></p>
+    <p>Target multiple contexts:</p>
+    <p>
+        <code>
+            { context: {
+            kind: "multi",
+            build: {
+            key: "build123",
+            flavor: "RELEASE",
+            target: "staging"
+            },
+            app: {
+            key: "schedulingAPI",
+            name: "Global Health Services",
+            owner: "AppTeam1"
+            }
+            }
+            }</code>
+    </p>
+</div>

@@ -129,3 +129,14 @@ Here's the output of Job where the LaunchDarkly flag `runTests` was set to `fals
 ![](docs/images/step7.png)
 
 Good job!
+
+## Building the plugin
+If you don't already have them installed, you'll need Java and <a href="https://maven.apache.org/install.html">Maven</a> to build the plugin code.
+
+To build the plugin `.hpi` file, run the following from the repo root:
+`% mvn package`
+
+This will create the `.hpi` file in the `target` directory. To automatically spin up a Jenkins server and install the plugin, run this:
+`% mvn hpi:run`
+
+When this finishes, navigate to http://localhost:8080/jenkins/ to try out the plugin. Start from the **Configuration** step above to set it up.  
